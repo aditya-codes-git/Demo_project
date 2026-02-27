@@ -6,17 +6,37 @@ import { ProjectsSection } from './sections/ProjectsSection'
 import { ExperienceSection } from './sections/ExperienceSection'
 import { ContactSection } from './sections/ContactSection'
 
+import { ReactLenis } from 'lenis/react'
+import { CustomCursor } from './components/CustomCursor'
+
 function App() {
   return (
-    <main className="min-h-screen bg-background text-foreground dark selection:bg-white/20">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ExperienceSection />
-      <ContactSection />
-    </main>
+    <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothTouch: true }}>
+      <main className="relative min-h-screen bg-background text-primary selection:bg-white/20">
+        <CustomCursor />
+
+        {/* Global Cinematic Background System */}
+        <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 blur-[150px] rounded-full mix-blend-screen" />
+          <div className="absolute top-[40%] right-[-10%] w-[30%] h-[50%] bg-violet-600/10 blur-[150px] rounded-full mix-blend-screen" />
+          <div className="absolute bottom-[-20%] left-[20%] w-[50%] h-[50%] bg-blue-600/10 blur-[150px] rounded-full mix-blend-screen" />
+        </div>
+
+        {/* The noise overlay */}
+        <div className="noise" />
+
+        {/* Content Layers */}
+        <div className="relative z-10">
+          <Navbar />
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <ExperienceSection />
+          <ContactSection />
+        </div>
+      </main>
+    </ReactLenis>
   )
 }
 

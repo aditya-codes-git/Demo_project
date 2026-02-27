@@ -7,37 +7,38 @@ export function ContactSection() {
     const { socialLinks } = portfolioData
 
     return (
-        <Section id="contact" className="pb-32">
-            <FadeIn className="text-center max-w-2xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Work Together.</h2>
-                <p className="text-xl text-zinc-400 mb-12">
-                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.
+        <Section id="contact" className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-32 border-t border-white/[0.05]">
+            <FadeIn className="text-center max-w-4xl mx-auto">
+                <h2 className="text-[8vw] leading-[0.85] font-bold tracking-tighter mb-8 text-white">LET'S TALK</h2>
+                <p className="text-2xl md:text-3xl text-zinc-400 mb-16 font-light leading-relaxed">
+                    Currently exploring new opportunities.<br />
+                    My inbox is always open.
                 </p>
 
                 <a
                     href={`mailto:${socialLinks.email}`}
-                    className="inline-flex items-center justify-center gap-2 bg-primary text-background font-semibold px-8 py-4 rounded-full hover:scale-105 transition-transform"
+                    className="inline-flex items-center justify-center gap-3 bg-white text-black font-bold tracking-widest uppercase px-12 py-6 rounded-full hover:scale-105 hover:bg-zinc-200 transition-all duration-300"
                 >
-                    <Mail className="w-5 h-5" />
+                    <Mail className="w-6 h-6" />
                     Say Hello
                 </a>
             </FadeIn>
 
-            <FadeIn delay={0.2} className="mt-24 pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="flex items-center justify-center gap-6">
-                    <a href={socialLinks.github} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2 glass rounded-full">
+            <FadeIn delay={0.2} className="mt-32 pt-12 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="flex items-center justify-center gap-8">
+                    <a href={socialLinks.github} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-4 glass-heavy rounded-full hover:scale-110">
                         <Github className="w-5 h-5" />
                     </a>
-                    <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2 glass rounded-full">
+                    <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-4 glass-heavy rounded-full hover:scale-110">
                         <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2 glass rounded-full">
+                    <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-white transition-colors p-4 glass-heavy rounded-full hover:scale-110">
                         <Twitter className="w-5 h-5" />
                     </a>
                 </div>
 
-                <p className="text-sm font-medium text-zinc-500">
-                    Designed & Built dynamically by Antigravity using Vite + React.
+                <p className="text-sm font-bold tracking-widest uppercase text-zinc-600">
+
                 </p>
             </FadeIn>
         </Section>

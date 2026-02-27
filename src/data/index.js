@@ -42,9 +42,8 @@ export const portfolioData = {
         { degree: "B.S. Computer Science", institution: "University Name", year: "2024" }
     ],
     socialLinks: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        email: "hello@example.com"
+        github: "https://github.com/aditya-codes-git",
+        linkedin: "https://www.linkedin.com/in/aditya-pharande-24720822a/",
+        twitter: "https://twitter.com"
     }
 };

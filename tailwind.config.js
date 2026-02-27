@@ -18,11 +18,11 @@ export default {
         heading: ['Sora', 'sans-serif'],
       },
       colors: {
-        background: "#09090b", // zinc-950
-        surface: "#18181b",    // zinc-900
-        primary: "#fafafa",    // zinc-50
-        muted: "#a1a1aa",      // zinc-400
-        border: "#27272a",     // zinc-800
+        background: "#030303", // deep void black
+        surface: "#0a0a0a",    // subtle elevation
+        primary: "#ffffff",    // pure white text
+        muted: "#71717a",      // zinc-500
+        border: "#18181b",     // zinc-900 
       },
       keyframes: {
         "accordion-down": {
