@@ -13,7 +13,7 @@ export function HeroSection() {
         >
             <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6">
 
-                {/* Massive Typography Stack */}
+                {/* Name — massive, ownable */}
                 <div className="flex flex-col mb-12">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -21,9 +21,8 @@ export function HeroSection() {
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                         className="overflow-hidden"
                     >
-                        <h1 className="text-[12vw] leading-[0.85] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/20">
-                            SOFTWARE<br />
-                            ENGINEER
+                        <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/20">
+                            ADITYA
                         </h1>
                     </motion.div>
                 </div>
@@ -41,7 +40,7 @@ export function HeroSection() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                             </span>
-                            Available
+                            Open to Internships
                         </div>
                     </motion.div>
 
@@ -53,13 +52,13 @@ export function HeroSection() {
                         transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <p className="text-xl md:text-2xl text-zinc-400 max-w-xl font-light leading-relaxed">
-                            {profile.tagline} Building powerful, minimal, and scalable web experiences.
+                            {profile.tagline} I've built 3 shipped products with React, AI, and Supabase — from automated QA to intelligent resume analysis.
                         </p>
 
                         <Magnetic>
                             <a href="#projects" className="group relative flex items-center justify-center w-32 h-32 rounded-full glass-heavy hover:bg-white/[0.08] transition-colors border border-white/[0.08]">
                                 <div className="text-center">
-                                    <span className="block text-sm font-medium text-white mb-1">Explore</span>
+                                    <span className="block text-sm font-medium text-white mb-1">Projects</span>
                                     <ArrowDownRight className="w-5 h-5 mx-auto text-zinc-400 group-hover:text-white transition-colors group-hover:rotate-[-45deg] duration-300" />
                                 </div>
                             </a>

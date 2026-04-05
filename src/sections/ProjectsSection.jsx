@@ -65,7 +65,7 @@ export function ProjectsSection() {
                                 </p>
 
                                 <div className="glass p-6 rounded-2xl mb-10">
-                                    <span className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-3 block">Impact & Case Study</span>
+                                    <span className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-3 block">How It Works</span>
                                     <p className="text-zinc-300 text-sm leading-relaxed">{project.caseStudy}</p>
                                 </div>
 
@@ -77,14 +77,14 @@ export function ProjectsSection() {
                                     ))}
                                 </div>
 
-                                <div className="flex items-center gap-8 mt-auto">
+                                <div className="flex items-center gap-4 mt-auto">
+                                    <a href={project.demoLink} target="_blank" rel="noreferrer" className="group/link inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-bold tracking-wide uppercase hover:scale-105 transition-all duration-300">
+                                        <ExternalLink className="w-4 h-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+                                        Live Demo
+                                    </a>
                                     <a href={project.repoLink} target="_blank" rel="noreferrer" className="group/link flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-bold tracking-wide uppercase">
                                         <Github className="w-4 h-4 transition-transform group-hover/link:-translate-y-0.5" />
                                         Source
-                                    </a>
-                                    <a href={project.demoLink} target="_blank" rel="noreferrer" className="group/link flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-bold tracking-wide uppercase">
-                                        <ExternalLink className="w-4 h-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
-                                        Live Site
                                     </a>
                                 </div>
                             </div>

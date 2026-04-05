@@ -1,9 +1,10 @@
-import { Navbar } from './components/Navbar'
+import { HomeDemo } from './components/blocks/HomeDemo'
 import { HeroSection } from './sections/HeroSection'
 import { AboutSection } from './sections/AboutSection'
 import { SkillsSection } from './sections/SkillsSection'
 import { ProjectsSection } from './sections/ProjectsSection'
 import { ContactSection } from './sections/ContactSection'
+import { ShaderAnimation } from './components/ui/shader-animation'
 
 import { ReactLenis } from 'lenis/react'
 import { CustomCursor } from './components/CustomCursor'
@@ -16,9 +17,10 @@ function App() {
 
         {/* Global Cinematic Background System */}
         <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 blur-[150px] rounded-full mix-blend-screen" />
-          <div className="absolute top-[40%] right-[-10%] w-[30%] h-[50%] bg-violet-600/10 blur-[150px] rounded-full mix-blend-screen" />
-          <div className="absolute bottom-[-20%] left-[20%] w-[50%] h-[50%] bg-blue-600/10 blur-[150px] rounded-full mix-blend-screen" />
+          <div className="absolute inset-0 opacity-40 mix-blend-screen">
+            <ShaderAnimation />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
 
         {/* The noise overlay */}
@@ -26,7 +28,7 @@ function App() {
 
         {/* Content Layers */}
         <div className="relative z-10">
-          <Navbar />
+          <HomeDemo />
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
