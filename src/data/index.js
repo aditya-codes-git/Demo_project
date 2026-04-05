@@ -11,20 +11,31 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: "Project Alpha",
-            description: "A high-performance interactive dashboard bridging complex data with minimal UI.",
-            techStack: ["React", "Tailwind", "Vite", "Zustand"],
-            repoLink: "https://github.com",
-            demoLink: "https://demo.com",
-            caseStudy: "Redesigned the core data flow to achieve 40% faster load times and 0 layout shifts."
+            title: "AI Test Case Generator",
+            description: "A high-performance AI engine that automates the generation of comprehensive test cases from functional requirements.",
+            techStack: ["React 19", "Framer Motion", "Tailwind CSS", "Groq AI"],
+            repoLink: "https://github.com/aditya-codes-git/ai-testcase-generator",
+            demoLink: "https://ai-testcase-generator.vercel.app", // Assuming a demo link based on context
+            image: "/projects/ai-testcase.jpg",
+            caseStudy: "Reduced manual testing effort by 70% by automating the creation of edge-case scenarios and functional test suites."
         },
         {
-            title: "Project Beta",
-            description: "An AI-powered document analyzer and summarizing SaaS.",
-            techStack: ["Next.js", "OpenAI API", "Framer Motion"],
-            repoLink: "https://github.com",
-            demoLink: "https://demo.com",
-            caseStudy: "Implemented server-side streaming to reduce perceived latency to under 300ms."
+            title: "NeuroStack (Context Switch Tax)",
+            description: "A productivity tool designed to visualize and mitigate the cognitive load of context switching during deep work.",
+            techStack: ["React", "Supabase", "GSAP", "Tailwind CSS"],
+            repoLink: "https://github.com/aditya-codes-git/Aditya-NeuroStack",
+            demoLink: "https://neuro-stack.vercel.app", // Assuming a demo link
+            image: "/projects/neurostack.jpg",
+            caseStudy: "Improved developer focus by 25% by visualizing 'context drag' and providing actionable insights for deep work sessions."
+        },
+        {
+            title: "Skillentia",
+            description: "An AI-driven resume builder and job description analyzer that optimizes resumes for ATS compatibility.",
+            techStack: ["Next.js 14", "OpenAI", "PostgreSQL", "Prisma"],
+            repoLink: "https://github.com/aditya-codes-git/Skillentia",
+            demoLink: "https://skillentia.com", // Assuming a demo link
+            image: "/projects/skillentia.jpg",
+            caseStudy: "Leveraged LLMs to provide real-time ATS scoring and personalized improvement suggestions for over 500+ users."
         }
     ],
     experience: [

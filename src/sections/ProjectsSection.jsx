@@ -19,21 +19,34 @@ export function ProjectsSection() {
 
                             {/* Image Placeholder / Visual Area */}
                             <div
-                                className={`relative lg:col-span-7 aspect-[4/3] rounded-3xl overflow-hidden glass-heavy group-hover:bg-white/[0.06] transition-all duration-700 ease-out ${idx % 2 === 1 ? 'lg:order-2' : ''
+                                className={`relative lg:col-span-7 aspect-[4/3] rounded-3xl overflow-hidden glass-heavy group-hover:bg-white/[0.06] transition-all duration-700 ease-out border border-white/[0.05] ${idx % 2 === 1 ? 'lg:order-2' : ''
                                     }`}
                             >
                                 {/* Subtle Inner Glow on Hover */}
                                 <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-                                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 lg:p-12">
+                                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 lg:p-8">
                                     <div className="w-full h-full border border-white/[0.08] rounded-xl bg-black/50 shadow-2xl overflow-hidden relative transform group-hover:scale-[1.03] transition-transform duration-700 ease-out backdrop-blur-md">
+                                        {/* Browser Header Bar */}
                                         <div className="h-8 w-full bg-white/[0.02] border-b border-white/[0.08] flex items-center px-4 gap-2">
-                                            <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                                            <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                                            <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-red-400/20" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-amber-400/20" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-emerald-400/20" />
                                         </div>
-                                        <div className="p-4 flex items-center justify-center opacity-30 h-[calc(100%-32px)] text-sm font-mono text-white">
-                                            <span className="group-hover:opacity-100 transition-opacity duration-500">Preview Render</span>
+
+                                        {/* Image or Placeholder */}
+                                        <div className="relative h-[calc(100%-32px)] w-full overflow-hidden">
+                                            {project.image ? (
+                                                <img
+                                                    src={project.image}
+                                                    alt={project.title}
+                                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                                />
+                                            ) : (
+                                                <div className="p-4 flex items-center justify-center opacity-30 h-full text-sm font-mono text-white">
+                                                    <span className="group-hover:opacity-100 transition-opacity duration-500">Preview Render</span>
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
