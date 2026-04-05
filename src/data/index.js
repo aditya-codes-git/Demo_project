@@ -15,7 +15,7 @@ export const portfolioData = {
             description: "A high-performance AI engine that automates the generation of comprehensive test cases from functional requirements.",
             techStack: ["React 19", "Framer Motion", "Tailwind CSS", "Groq AI"],
             repoLink: "https://github.com/aditya-codes-git/ai-testcase-generator",
-            demoLink: "https://ai-testcase-generator.vercel.app", // Assuming a demo link based on context
+            demoLink: "https://ai-testcase-generator-nullpointer.vercel.app/", // Assuming a demo link based on context
             image: "/projects/ai-testcase.jpg",
             caseStudy: "Reduced manual testing effort by 70% by automating the creation of edge-case scenarios and functional test suites."
         },
@@ -24,7 +24,7 @@ export const portfolioData = {
             description: "A productivity tool designed to visualize and mitigate the cognitive load of context switching during deep work.",
             techStack: ["React", "Supabase", "GSAP", "Tailwind CSS"],
             repoLink: "https://github.com/aditya-codes-git/Aditya-NeuroStack",
-            demoLink: "https://neuro-stack.vercel.app", // Assuming a demo link
+            demoLink: "https://contextswitch2.vercel.app/", // Assuming a demo link
             image: "/projects/neurostack.jpg",
             caseStudy: "Improved developer focus by 25% by visualizing 'context drag' and providing actionable insights for deep work sessions."
         },
@@ -33,7 +33,7 @@ export const portfolioData = {
             description: "An AI-driven resume builder and job description analyzer that optimizes resumes for ATS compatibility.",
             techStack: ["Next.js 14", "OpenAI", "PostgreSQL", "Prisma"],
             repoLink: "https://github.com/aditya-codes-git/Skillentia",
-            demoLink: "https://skillentia.com", // Assuming a demo link
+            demoLink: "https://skillentia.vercel.app/", // Assuming a demo link
             image: "/projects/skillentia.jpg",
             caseStudy: "Leveraged LLMs to provide real-time ATS scoring and personalized improvement suggestions for over 500+ users."
         }
