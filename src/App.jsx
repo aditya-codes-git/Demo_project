@@ -3,7 +3,6 @@ import { HeroSection } from './sections/HeroSection'
 import { AboutSection } from './sections/AboutSection'
 import { SkillsSection } from './sections/SkillsSection'
 import { ProjectsSection } from './sections/ProjectsSection'
-import { ExperienceSection } from './sections/ExperienceSection'
 import { ContactSection } from './sections/ContactSection'
 
 import { ReactLenis } from 'lenis/react'
@@ -32,7 +31,6 @@ function App() {
           <AboutSection />
           <ProjectsSection />
           <SkillsSection />
-          <ExperienceSection />
           <ContactSection />
         </div>
       </main>

@@ -6,7 +6,6 @@ export function Navbar() {
     const links = [
         { name: "About", href: "#about" },
         { name: "Projects", href: "#projects" },
-        { name: "Experience", href: "#experience" },
     ]
 
     return (

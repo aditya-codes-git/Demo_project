@@ -38,17 +38,7 @@ export const portfolioData = {
             caseStudy: "Leveraged LLMs to provide real-time ATS scoring and personalized improvement suggestions for over 500+ users."
         }
     ],
-    experience: [
-        {
-            role: "Software Engineer",
-            company: "Tech Corp",
-            duration: "2023 - Present",
-            highlights: [
-                "Architected scalable frontend solutions using React.",
-                "Led the migration to Tailwind CSS, improving design consistency."
-            ]
-        }
-    ],
+
     education: [
         { degree: "B.S. Computer Science", institution: "University Name", year: "2024" }
     ],
